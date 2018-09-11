@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <a href="#" class="logo-link"></a>
+                </div>
+                <input type="checkbox" id="checkbox" class="menu_mobile_checkbox"/>
+                <label class="burger" for="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a class="menu-link" href="#modal">Login</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link menu-link-mail" href="#">Mensajes</a>
+                        <span>24</span>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link menu-link-favorites" href="#">Favoritos</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link menu-link-notify" href="#">Notificaciones</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link menu-link-user" href="#"></a>
+                        <ul class="submenu-list">
+                            <li class="submenu">
+                                <a class="submenu-link" href="#">Mi panel de control</a>
+                            </li>
+                            <li class="submenu">
+                                <a class="submenu-link" href="#">Editar perfil</a>
+                            </li>
+                            <li class="submenu">
+                                <a class="submenu-link" href="#">Ajustes</a>
+                            </li>
+                            <li class="submenu">
+                                <a class="submenu-link" href="#">Cerrar session</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="sidebar">
+                    <div class="sidebar-items">
+                        <img class="sidebar-image" src="image/user-main.png" alt="user photo">
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <p class="progress-bar-text">
+                            <span>87%</span> Completado
+                        </p>
+                        <div class="star">
+                            <span>Calificación</span>
+                            <div class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" />
+                                <label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4" />
+                                <label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3" />
+                                <label class="full" for="star3" title="Meh - 3 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2" />
+                                <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1" />
+                                <label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-items">
+                        <h3 class="sidebar-title">Mi Perfil</h3>
+                        <ul class="sidebar-list">
+                            <li class="sidebar-item sidebar-item--active">
+                                <a class="sidebar-link" href="#">Información Personal</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="#">сonfianza y Seguridad</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-items">
+                        <h3 class="sidebar-title">Mi Garage</h3>
+                        <ul class="sidebar-list">
+                            <li class="sidebar-item sidebar-item--active">
+                                <a class="sidebar-link" href="#">Agregar publicación</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="#">Mis publicaciones</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-items">
+                        <h3 class="sidebar-title">Agenda una cita</h3>
+                        <ul class="sidebar-list">
+                            <li class="sidebar-item sidebar-item--active">
+                                <a class="sidebar-link" href="#">Solicitar revisión de código VIN y papeles</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="#">Solicitar Certificación CTS</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-items sidebar-items--empty">
+                        <h3 class="sidebar-title">Ajustes</h3>
+                        <h3 class="sidebar-title">Reseñas</h3>
+                    </div>
+                    <div class="sidebar-items sidebar-items--bottom">
+                        <h3 class="sidebar-title">Ayuda</h3>
+                        <div class="sidebar-user">
+                            <div class="sidebar-user--image">
+                                <img src="image/user-grey.png" alt="">
+                            </div>
+                            <div class="sidebar-user--desc">
+                                <p class="sidebar-user--text">Tu asistente personal: </p>
+                                <p class="sidebar-user--name">Jessica Flores</p>
+                                <button class="btn btn-border">CONTACTAR</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-items">
+                        <button class="sidebar-items-btn btn btn-simple">Cerrar Sesión</button>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <h1 class="content-heading">Información Personal</h1>
+                    <div class="content-title">
+                        <h2 class="content-title--text content-title--text-light">Tu ID de Usuario
+                            <span>2 8 6 4 6 5</span>
+                        </h2>
+                    </div>
+                    <form action="" class="content-from">
+                        <div class="form-row form-row--inform">
+                            <label class="form-label form-label--lock" for="form-user">Nombre de usuario<span class="bubble-label--lock">Privado</span></label>
+                            <div class="form-field--inform">
+                                <input class="form-field" id="form-user" type="text">
+                                <div class="inform-wrap">
+                                    <div class="inform"></div>
+                                    <div class="bubble">Es muy importante que proporciones tus datos completos.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="form-label form-label--lock" for="form-name">Nombre<span class="bubble-label--lock">Privado</span></label>
+                            <input class="form-field" id="form-name" type="text">
+                        </div>
+                        <div class="form-row form-row--inform">
+                            <label class="form-label form-label--lock" for="form-surname">Primer Apellido<span class="bubble-label--lock">Privado</span></label>
+                            <div class="form-field--inform">
+                                <input class="form-field" id="form-surname" type="text">
+                                <div class="inform-wrap">
+                                    <div class="inform"></div>
+                                    <div class="bubble">Es muy importante que proporciones tus datos completos.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="form-label form-label--lock" for="form-surname-second">Segundo Apellido<span class="bubble-label--lock">Privado</span></label>
+                            <input class="form-field" id="form-surname-second" type="text">
+                        </div>
+                        <div class="form-row">
+                            <label class="form-label form-label--lock" for="form-soy">Soy<span class="bubble-label--lock">Privado</span></label>
+                            <select class="form-field  form-field--select" id="form-soy" type="text">
+                                <option value="">Hombre</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label class="form-label" for="form-email">Correo electrónico</label>
+                            <div class="form--verify">
+                                <input class="form-field" id="form-email" type="email">
+                                <Button class="btn btn-border">Verificar</Button>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="form-label form-label--lock--pink" for="form-phone">Número de teléfono<span class="bubble-label--lock">Privado</span></label>
+                            <div class="form--number">
+                                <input class="form-field--number" id="form-phone" type="email">
+                                <Button class="btn btn-succes">Verificado</Button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="content-title">
+                        <h2 class="content-title--text">Dirección de Casa</h2>
+                    </div>
+                    <form action="" class="content-from">
+                        <div class="form-row">
+                            <label class="form-label" for="form-country">País</label>
+                            <input class="form-field" id="form-country" type="text">
+                        </div>
+                        <div class="form-row">
+                            <label class="form-label" for="form-state">Estado</label>
+                            <input class="form-field" id="form-state" type="text">
+                        </div>
+                        <div class="form-row">
+                            <label class="form-label" for="form-city">Ciudad</label>
+                            <input class="form-field" id="form-city" type="text">
+                        </div>
+                        <div class="form-row">
+                            <label class="form-label form-label--lock" for="form-colony">Colonia o Municipio<span class="bubble-label--lock">Privado</span></label>
+                            <input class="form-field" id="form-colony" type="text">
+                        </div>
+                        <div class="form-row">
+                            <label class="form-label form-label--lock" for="form-adress">Dirección<span class="bubble-label--lock">Privado</span></label>
+                            <input class="form-field" id="form-adress" type="text">
+                        </div>
+                        <div class="form-row">
+                            <label class="form-label form-label--lock" for="form-code">Código Postal<span class="bubble-label--lock">Privado</span></label>
+                            <input class="form-field form-field--select" id="form-code" type="text">
+                        </div>
+                    </form>
+                    <div class="content-title">
+                        <h2 class="content-title--text">Redes Sociales conectadas</h2>
+                    </div>
+
+                    <div class="content-social-btn">
+                        <div class="social-btn--inner">
+                            <button class="btn btn-social btn-google">Conectar Google</button>
+                            <button class="btn btn-social btn-facebook">Conectar Facebook</button>
+                        </div>
+                    </div>
+                    <form class="form-help" action="">
+                        <div class="form-help--header">
+                            <div class="form-help--text">
+                                <h3 class="form-help--title">Contacto</h3>
+                                <p class="form-help--subtitle">Contáctanos si necesitas ayuda.</p>
+                            </div>
+                            <div class="form-help--img">
+                                <img src="image/user.png" alt="">
+                            </div>
+                        </div>
+                        <div class="form-help-row">
+                            <input class="form-help-field" type="text" name="name" id="name" placeholder="Nombre">
+                            <input class="form-help-field" type="text" name="phone" id="phone" placeholder="Phone">
+                        </div>
+                        <div class="form-help-row">
+                            <input class="form-help-field" type="text" name="client-id" id="client-id" placeholder="Client ID">
+                            <input class="form-help-field" type="text" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-help-row">
+                            <textarea class="form-help-field" name="message" id="message" placeholder="Tu mensaje…"></textarea>
+                        </div>
+                        <div class="form-help-row">
+                            <button class="form-help--btn btn btn-border" type="submit">ENVIAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="logo">
+                        <a href="#" class="logo-link"></a>
+                    </div>
+                </div>
+                <ul class="row footer-menu-list">
+                    <li class="footer-menu-item">
+                        <a href="#" class="footer-menu-link">Acerca de Nosotros</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="#" class="footer-menu-link">Política de Privacidad</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="#" class="footer-menu-link">Ayuda</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="#" class="footer-menu-link">Certificación</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="#" class="footer-menu-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <ul class="footer-bottom-items row">
+                    <li class="footer-menu-item">
+                        <a href="#" class="footer-menu-link">2017-2018 Todos los derechos reservados</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="#" class="footer-menu-link">+4 076 777 351 454</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="#" class="footer-menu-link">cambiauto@cambiauto.com</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="#" class="footer-menu-link">Lun - Vie 9:00 -19:00</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="#" class="footer-menu-link link-instagram"></a>
+                        <a href="#" class="footer-menu-link link-facebook"></a>
+                        <a href="#" class="footer-menu-link link-twitter"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="modal" id="modal">
+        <a class="modal-btn-close btn" href="#"></a>
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <h2>ENCUENTRA. NEGOCIA. ¡ESTÁS LISTO!</h2>
+                </div>
+            </div>
+            <div class="modal-body">
+                <form class="modal-form" action="">
+                    <h3 class="modal-form--title">¡Únete a Cambiauto!</h3>
+                    <p class="modal-form--subtitle">It is a long established fact that a reader will be distracted by the readable content when looking at
+                        its layout. The point of using Lorem Ipsum is that it has a +/- normal distribution. </p>
+                    <div class="modal-form--field--row">
+                        <input type="text" class="modal-form--field" placeholder="Email">
+                    </div>
+                    <div class="modal-form--field--row modal-form--field-hide">
+                        <input type="password" class="modal-form--field" placeholder="Email">
+                        <span>Tu contraseña debe tener al menos 8 caracteres, con al menos una letra y al menos un número o carácter
+                            especial.
+                        </span>
+                    </div>
+                    <div class="modal-form--field--row">
+                        <input type="text" class="modal-form--field" placeholder="Email">
+                    </div>
+                    <div class="modal-form--field--row">
+                        <input type="text" class="modal-form--field" placeholder="Email">
+                    </div>
+                    <div class="modal-form--btn">
+                        <button class="btn btn-solid">¡Registrarme!</button>
+                    </div>
+                </form>
+                <div class="modal-social-btn">
+                    <div class="modal-social-btn-wrap">
+                        <button class="btn btn-social btn-facebook">Conectar con Facebook</button>
+                        <button class="btn btn-social btn-google">Conectar con Google</button>
+                        <p class="modal-error-msg"> Esta cuenta ya se encuentra registrada. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="modal-container">
+                <p class="modal-footer--text">
+                    <a href="#" class="modal-footer--link">¿Eres un Negocio o Agencia? </a>
+                </p>
+                <p class="modal-footer--text">Al registrarme, declaro que soy mayor de edad y acepto las
+                    <a href="#" class="modal-footer--link">Políticas de Privacidad</a>y los érminos y
+                    <a href="#" class="modal-footer--link">Condiciones de Cambiauto.</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
