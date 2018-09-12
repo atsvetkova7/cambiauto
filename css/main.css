@@ -119,7 +119,7 @@ html {
 }
 .menu-item span {
     position: absolute;
-    right: -25px;
+    right: -28px;
     top: 50%;
     transform: translateY(-50%);
     color: #fff;
@@ -234,7 +234,7 @@ html {
 .sidebar-items {
     margin-bottom: 31px;
     padding-left: 71px;
-    border-bottom: 1px solid #979797;
+    border-bottom: 1px solid #58555b;
     opacity: .8;
 }
 .sidebar-image {
@@ -245,11 +245,14 @@ html {
     border: none;
     margin-bottom: 51px;
 }
+.sidebar-items:nth-child(3) .sidebar-list {
+    margin-bottom: 36px;
+}
 .sidebar-items:nth-child(3) {
-    margin-bottom: 57px;
+    margin-bottom: 40px;
 }
 .sidebar-items:nth-child(4) .sidebar-item  {
-    margin-bottom: 36px;
+    margin-bottom: 33px;
 }
 .sidebar-items:nth-child(4) .sidebar-list  {
     max-width: 90%;
@@ -585,9 +588,11 @@ html {
     border-right: 6px solid #fff;
 }
 .inform {
-    width: 30px; 
+    width: 30px;
     height: 30px;
-    background: url(../image/css_sprites.png) -166px -62px;
+    background: url(../image/css_sprites.png) -166px -64px;
+    background-color: #c599e4;
+    border-radius: 50%;
 }
 .inform:hover + .bubble {
     visibility: visible;
@@ -673,6 +678,9 @@ html {
 .form-field--select {
     width: 145px;
     padding: 9px 11px;
+    -moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
 }
 
 .form--verify {
@@ -1134,18 +1142,22 @@ textarea.form-help-field {
 }
 
 @media screen and (max-width: 768px) {
+    .header {
+        height: 70px;
+    }
     .logo {
-        padding-left: 20px;
+        padding-left: 10px;
+        padding-top: 15px;
     }
     .menu {
         display: none;
     }
     .burger {
         display: block;
-        width: 40px;
+        width: 36px;
         height: 35px;
         position: relative;
-        margin-top: 43px;
+        margin-top: 26px;
         margin-right: 10px;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
@@ -1181,20 +1193,20 @@ textarea.form-help-field {
     }
       
     .burger span:nth-child(2) {
-        top: 12px;
+        top: 9px;
     }
       
     .burger span:nth-child(3) {
-        top: 25px;
+        top: 19px;
     }
 
     .menu_mobile_checkbox:checked ~ .burger {
         position: fixed;
-        right: 20px;
+        right: 5px;
     }
     
     .menu_mobile_checkbox:checked ~ .burger span:nth-child(1) {
-        top: 18px;
+        top: 15px;
         -webkit-transform: rotate(135deg);
         -moz-transform: rotate(135deg);
         -o-transform: rotate(135deg);
@@ -1205,7 +1217,7 @@ textarea.form-help-field {
         left: -60px;
     }
     .menu_mobile_checkbox:checked ~ .burger span:nth-child(3) {
-        top: 18px;
+        top: 15px;
         -webkit-transform: rotate(-135deg);
         -moz-transform: rotate(-135deg);
         -o-transform: rotate(-135deg);
@@ -1356,4 +1368,28 @@ textarea.form-help-field {
 }
 
 
-
+.form-row--error {
+    position: relative;
+}
+.form-row--error .form-field {
+    border: 1px solid red;
+    box-shadow: 0 0 2px 0px red;
+}
+.form-text-error {
+    color: red;
+    font-family: 'Airbnb Cereal App Bold';
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding-left: 15px;
+    position: absolute;
+    bottom: -15px;
+}
+.form-label--require {
+    position: relative;
+}
+.form-label--require:after {
+    position: absolute;
+    content: '*';
+    left: 5px;
+    top: 3px;
+} 
