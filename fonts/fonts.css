@@ -29,4 +29,10 @@
     font-weight: 300;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'Cunia';
+    src: url('cunia.woff2') format('woff2'),
+        url('Cunia.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

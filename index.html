@@ -102,7 +102,7 @@
                     <div class="sidebar-items">
                         <h3 class="sidebar-title">Mi Garage</h3>
                         <ul class="sidebar-list">
-                            <li class="sidebar-item sidebar-item--active">
+                            <li class="sidebar-item">
                                 <a class="sidebar-link" href="#">Agregar publicación</a>
                             </li>
                             <li class="sidebar-item">
@@ -113,7 +113,7 @@
                     <div class="sidebar-items">
                         <h3 class="sidebar-title">Agenda una cita</h3>
                         <ul class="sidebar-list">
-                            <li class="sidebar-item sidebar-item--active">
+                            <li class="sidebar-item">
                                 <a class="sidebar-link" href="#">Solicitar revisión de código VIN y papeles</a>
                             </li>
                             <li class="sidebar-item">
@@ -206,7 +206,9 @@
                     <form action="" class="content-from content-from--second">
                         <div class="form-row">
                             <label class="form-label" for="form-country">País</label>
-                            <input class="form-field" id="form-country" type="text">
+                            <select name="" id="form-country" class="form-field">
+                                <option value="País">País</option>
+                            </select>
                         </div>
                         <div class="form-row">
                             <label class="form-label" for="form-state">Estado</label>
@@ -226,7 +228,7 @@
                         </div>
                         <div class="form-row">
                             <label class="form-label form-label--lock" for="form-code">Código Postal<span class="bubble-label--lock">Privado</span></label>
-                            <input class="form-field form-field--select" id="form-code" type="text">
+                            <input class="form-field form-field--code" id="form-code" type="text">
                         </div>
                     </form>
                     <div class="content-title content-title--third">
