@@ -813,6 +813,12 @@ textarea.form-help-field {
 .footer-top .footer-menu-item  {
     margin-right: 38px;
 }
+.footer-top .footer-menu-list {
+    margin-left: 0;
+}
+.footer-top .logo {
+    padding-left: 0;
+}
 .footer-menu-item:last-child {
     display: flex;
     flex-wrap: nowrap;
@@ -1095,6 +1101,9 @@ textarea.form-help-field {
     .content {
         padding-left: 53px;
     }
+    .footer-bottom .footer-menu-item {
+        margin-right: 17px;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -1157,6 +1166,18 @@ textarea.form-help-field {
     .form-row {
         padding-left: 12px;
     }
+    .footer-bottom {
+        height: 100%;
+    }
+    .footer-bottom-items {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .footer-bottom .footer-menu-item {
+        margin-right: 0;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1408,3 +1429,6 @@ textarea.form-help-field {
     top: 3px;
 } 
 
+.footer-menu-link {
+    display: block;
+}
