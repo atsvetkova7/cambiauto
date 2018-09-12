@@ -60,6 +60,16 @@ html {
     width: 100%;
     margin: 0 auto;
 }
+@media screen and (max-width: 1200px) {
+    .container {
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        padding-right: 0;
+    }
+}
 
 .header {
     border-bottom: 1px solid #2c2830;
@@ -1169,6 +1179,9 @@ textarea.form-help-field {
     .footer-bottom {
         height: 100%;
     }
+    .footer-top .footer-menu-item {
+        margin-right: 20px;
+    }
     .footer-bottom-items {
         flex-direction: column;
         align-items: center;
@@ -1182,6 +1195,7 @@ textarea.form-help-field {
         padding: 10px;
         text-align: center;
     }
+    
 
 }
 
