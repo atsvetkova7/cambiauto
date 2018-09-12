@@ -164,7 +164,7 @@
                         <div class="form-row form-row--error">
                             <label class="form-label form-label--lock" for="form-name">Nombre<span class="bubble-label--lock">Privado</span></label>
                             <input class="form-field" id="form-name" type="text">
-                            <span class="form-text-error">Error</span>
+                            <span class="form-text-error">This field is required</span>
                         </div>
                         <div class="form-row form-row--inform">
                             <label class="form-label form-label--lock" for="form-surname">Primer Apellido<span class="bubble-label--lock">Privado</span></label>
@@ -180,11 +180,14 @@
                             <label class="form-label form-label--lock" for="form-surname-second">Segundo Apellido<span class="bubble-label--lock">Privado</span></label>
                             <input class="form-field" id="form-surname-second" type="text">
                         </div>
-                        <div class="form-row">
+                        <div class="form-row form-row--select">
                             <label class="form-label form-label--lock" for="form-soy">Soy<span class="bubble-label--lock">Privado</span></label>
-                            <select class="form-field  form-field--select" id="form-soy" type="text">
-                                <option value="">Hombre</option>
-                            </select>
+                            <div class="form-select--small form-select-wrap">
+                                <select class="form-field  form-field--select" id="form-soy" type="text">
+                                    <option value="">Hombre</option>
+                                </select>
+                            </div>
+                            
                         </div>
                         <div class="form-row">
                             <label class="form-label" for="form-email">Correo electrónico</label>
@@ -205,11 +208,13 @@
                         <h2 class="content-title--text">Dirección de Casa</h2>
                     </div>
                     <form action="" class="content-from content-from--second">
-                        <div class="form-row">
+                        <div class="form-row form-row--select">
                             <label class="form-label" for="form-country">País</label>
-                            <select name="" id="form-country" class="form-field">
-                                <option value="País">País</option>
-                            </select>
+                            <div class="form-select--default form-select-wrap">
+                                <select name="" id="form-country" class="form-field">
+                                    <option value="País">País</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="form-row">
                             <label class="form-label" for="form-state">Estado</label>

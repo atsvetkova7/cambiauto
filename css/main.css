@@ -675,14 +675,32 @@ html {
     border-color: #784ed0;
     color: #784ed0;
 }
-.form-field--select {
-    width: 145px;
-    padding: 9px 11px;
+.form-row--select select {
     -moz-appearance: none; 
 	-webkit-appearance: none; 
 	appearance: none;
 }
-
+.form-select-wrap {
+    position: relative;
+}
+.form-select-wrap::after {
+    position: absolute;
+    content: '';
+    top: 45%;
+    right: 12px;
+    border: 6px solid transparent;
+    border-top: 6px solid #000;
+}
+.form-select--small {
+    width: 145px;
+}
+.form-select--default {
+    max-width: 460px;
+    width: 100%;
+}
+.form-select--small select {
+    padding: 9px 11px;
+}
 .form--verify {
     display: flex;
 }
@@ -1368,9 +1386,7 @@ textarea.form-help-field {
 }
 
 
-.form-row--error {
-    position: relative;
-}
+
 .form-row--error .form-field {
     border: 1px solid red;
     box-shadow: 0 0 2px 0px red;
@@ -1381,8 +1397,6 @@ textarea.form-help-field {
     letter-spacing: 1px;
     font-size: 12px;
     padding-left: 15px;
-    position: absolute;
-    bottom: -15px;
 }
 .form-label--require {
     position: relative;
@@ -1393,3 +1407,4 @@ textarea.form-help-field {
     left: 5px;
     top: 3px;
 } 
+
