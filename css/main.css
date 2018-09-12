@@ -1177,6 +1177,11 @@ textarea.form-help-field {
     .footer-bottom .footer-menu-item {
         margin-right: 0;
     }
+    .footer-menu-item {
+        margin-right: 0;
+        padding: 10px;
+        text-align: center;
+    }
 
 }
 
@@ -1302,11 +1307,7 @@ textarea.form-help-field {
         margin-bottom: 20px;
         margin-left: 0;
     }
-    .footer-menu-item {
-        margin-right: 0;
-        padding: 10px;
-        text-align: center;
-    }
+
     .footer .logo {
         margin-bottom: 15px;
         padding: 30px 0 0 0;
