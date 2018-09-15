@@ -74,7 +74,7 @@ html {
 .header {
     border-bottom: 1px solid #2c2830;
     background-color: #fff;
-    height: 101px;
+    /* height: 75px; */
 }
 .row {
     display: flex;
@@ -83,10 +83,10 @@ html {
 .logo {
     margin-right: auto;
     display: flex;
-
-    
     padding-left: 70px;
-    padding-top: 40px;
+    padding-top: 15px;
+    /* margin-top: auto;
+    margin-bottom: auto; */
 }
 .logo-link {
     background: url(../image/css_sprites.png) -114px -10px;
@@ -97,7 +97,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 36px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .menu-item {
     position: relative;
@@ -226,9 +227,12 @@ html {
     max-width: 433px;
     width: 100%;
     background-color: #2c2830;
-    padding: 64px 54px 106px 0;
+    padding: 35px 54px 106px 0;
+    /* position: absolute; */
+    /* top: 80px; */
     position: relative;
 }
+
 .main {
     position: relative;
 }
@@ -242,33 +246,36 @@ html {
     height: 100%;
 }
 .sidebar-items {
-    margin-bottom: 31px;
+    margin-bottom: 20px;
     padding-left: 71px;
     border-bottom: 1px solid #58555b;
-    opacity: .8;
 }
 .sidebar-image {
-    margin-left: -7px;
-    margin-bottom: -4px;
+    position: relative;
+    width: 130px;
+    height: 130px;
+}
+.sidebar-image img {
+    margin: 0 0 4px 7px;
+    border-radius: 50%;
+    box-shadow: 1px 0 6px 3px #1c1c1c;
+}
+.sidebar-image--success {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: url(../image/css_sprites.png) -116px -64px;
+    right: 0;
+    top: 10px;
 }
 .sidebar-items:first-child {
     border: none;
-    margin-bottom: 51px;
-}
-.sidebar-items:nth-child(3) .sidebar-list {
-    margin-bottom: 36px;
-}
-.sidebar-items:nth-child(3) {
-    margin-bottom: 40px;
-}
-.sidebar-items:nth-child(4) .sidebar-item  {
-    margin-bottom: 33px;
+    margin-bottom: 25px;
 }
 .sidebar-items:nth-child(4) .sidebar-list  {
     max-width: 90%;
-}
-.sidebar-items--empty > .sidebar-title {
-    margin-bottom: 40px;
 }
 .progress-bar-wrap {
     width: 163px;
@@ -284,27 +291,28 @@ html {
     background-image: linear-gradient(to right bottom, #633cbc, #7b45c2, #914fc7, #a55acd, #b865d3);
 }
 .progress-bar-text {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
     font-family: 'Airbnb Cereal App Book';
-    margin-bottom: 44px;
+    margin-bottom: 10px;
     letter-spacing: 2.4px;
+    font-size: 14px;
 }
 .sidebar-title {
-    margin-bottom: 23px;
-    font-size: 29px;
+    margin-bottom: 10px;
+    font-size: 24px;
     font-family: 'Airbnb Cereal App Bold';
     color: #666468;
     letter-spacing: 2.3px;
 }
 .sidebar-item {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 }
 .sidebar-link {
-    font-size: 16px;
+    font-size: 13px;
     font-family: 'Airbnb Cereal App Book';
     text-transform: uppercase;
     text-decoration: none;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
     transition: all .2s ease;
     letter-spacing: 2px;
 }
@@ -339,16 +347,15 @@ html {
 }
 .sidebar-items--empty {
     border-bottom: none;
-    margin-bottom: auto;
+    margin-bottom: 1505px;
 }
 .sidebar-items:last-child {
     border-bottom: none;
 }
 .sidebar-items--bottom {
-    border-top: 1px solid #979797;
-    padding-top: 40px;
-    padding-bottom: 42px;
-    padding-left: 51px;
+    border-top: 1px solid #58555b;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .sidebar-user {
     display: flex;
@@ -401,7 +408,7 @@ html {
     padding-left: 35px;
     background-color: transparent;
     text-transform: uppercase;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
     letter-spacing: 1.2px;
     font-size: 16px;
 }
@@ -485,11 +492,10 @@ html {
 /* CONTENT */
 .content {
     padding-left: 79px;
-    padding-top: 64px;
+    padding-top: 35px;
     padding-bottom: 79px;
     flex: 1;
 }
-
 .content-heading {
     margin-bottom: 41px;
     color: #332c2c;
@@ -499,15 +505,12 @@ html {
     letter-spacing: 0.4px;
 }
 .content-title {
-    padding-left: 36px;
-    border-bottom: 1px solid #393939;
+    border-bottom: 1px solid #aaa;
 }
 .content-title--second {
-    padding-left: 40px;
     margin-bottom: 0;
 }
 .content-title--third {
-    padding-left: 45px;
     margin-bottom: 16px;
 }
 .content-title--text {
@@ -543,14 +546,12 @@ html {
 }
 .form-row {
     padding-top: 28px;
-    padding-left: 25px;
 }
 .form-row:not(.form-row--inform) {
     padding-right: 40px;
 }
 .form-label {
     display: inline-block;
-    padding-left: 15px;
     letter-spacing: 0.1px;
     margin-bottom: 14px;
     font-family: 'Airbnb Cereal App Medium';
@@ -670,7 +671,7 @@ html {
     padding: 9px 15px;
     max-width: 460px;
     width: 100%;
-    border: 1px solid #000;
+    border: 1px solid #ccc;
     border-radius: 3px;
     color: #332c2c;
     font-family: 'Airbnb Cereal App Book';
@@ -724,7 +725,7 @@ html {
     max-width: 237px;
     width: 100%;
     padding: 10px 15px;
-    border: 1px solid #000;
+    border: 1px solid #ccc;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
 }
@@ -733,7 +734,6 @@ html {
 }
 .content-social-btn {
     margin-top: 32px;
-    margin-left: 23px;
     margin-bottom: 85px;
 }
 .form-help {
@@ -811,7 +811,7 @@ textarea.form-help-field {
 .footer-menu-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     margin-left: 78px;
 }
 .footer-menu-list:last-child {
@@ -889,17 +889,24 @@ textarea.form-help-field {
 	bottom: 0;
     left: 0;
     right: 0;
-    background: #2c2830;
+    background: rgba(44, 40, 48, .8);
     transition: opacity 200ms;
     visibility: hidden;
     opacity: 0;
-    padding-top: 111px;
-    overflow-y: scroll;
+    overflow-y: auto;
     z-index: 4;
 }
 .modal:target {
     visibility: visible;
     opacity: 1;
+}
+.modal-container--outer {
+    position: relative;
+    background-color: #2c2830;
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
 }
 .modal-container {
     max-width: 750px;
@@ -907,7 +914,7 @@ textarea.form-help-field {
     margin: 0 auto;
 }
 .modal-title h2 {
-    margin-bottom: 33px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     color: #fff;
     font-size: 37px;
@@ -918,25 +925,24 @@ textarea.form-help-field {
 .modal-form {
     max-width: 400px;
     width: 100%;
-    margin: 0 auto 87px;
+    margin: 0 auto 25px;
 }
 .modal-form--title {
-    margin-bottom: 17px;
+    margin-bottom: 12px;
     text-align: center;
     font-size: 23px;
     color: #878489;
     font-family: 'Airbnb Cereal App Book';
 }
 .modal-form--subtitle {
-    margin-bottom: 31px;
+    margin-bottom: 15px;
     font-size: 14px;
     font-family: 'Airbnb Cereal App Book';
     color: #878489;
-    line-height: 1.5em;
     letter-spacing: 0;
 }
 .modal-form--field--row {
-    margin-bottom: 28px;
+    margin-bottom: 15px;
 }
 .modal-form--field {
     width: 100%;
@@ -976,7 +982,7 @@ textarea.form-help-field {
 .modal-social-btn {
    display: flex;
    justify-content: center;
-   margin-bottom: 44px;
+   margin-bottom: 15px;
 }
 .modal-social-btn-wrap {
     position: relative;
@@ -996,7 +1002,7 @@ textarea.form-help-field {
 }
 .modal-footer {
     border-top: 2px solid #201d23;
-    padding: 38px 0 52px;
+    padding: 15px 0;
     text-align: center;
 }
 .modal-footer--text {
@@ -1026,17 +1032,17 @@ textarea.form-help-field {
 .modal-btn-close {
     position: absolute;
     color: #fff;
-    top: 88px;
-    right: 368px;
-    width: 40px;
-    height: 40px;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
 }
 .modal-btn-close::after {
     position: absolute;
     content: '';
     left: 50%;
     width: 2px;
-    height: 54px;
+    height: 20px;
     background-color: #fff;
     transform: rotate(-45deg);
 }
@@ -1045,7 +1051,7 @@ textarea.form-help-field {
     content: '';
     left: 50%;
     width: 2px;
-    height: 54px;
+    height: 20px;
     background-color: #fff;
     transform: rotate(45deg);
 }
@@ -1053,9 +1059,10 @@ textarea.form-help-field {
 
 /* STARS */
 .star > span {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
     font-family: 'Airbnb Cereal App Book';
     letter-spacing: 2px;
+    font-size: 14px;
 }
 .star {
     display: flex;
@@ -1084,16 +1091,7 @@ textarea.form-help-field {
     display: none;
 }
 
-@media screen and (max-width: 1600px) {
-    .modal-btn-close {
-        right: 100px;
-    }
-}
-
 @media screen and (max-width: 1200px) {
-    .modal-btn-close {
-        top: 50px;
-    }
     .bubble {
         left: -174px;
         background: #fff;
@@ -1117,6 +1115,10 @@ textarea.form-help-field {
 }
 
 @media screen and (max-width: 992px) {
+    .sidebar-items--empty {
+        margin-bottom: 1583px;
+    }
+    
     .logo {
         padding-left: 10px;
     }
@@ -1173,9 +1175,9 @@ textarea.form-help-field {
     .sidebar {
         max-width: 374px;
     }
-    .form-row {
+    /* .form-row {
         padding-left: 12px;
-    }
+    } */
     .footer-bottom {
         height: 100%;
     }
@@ -1195,17 +1197,13 @@ textarea.form-help-field {
         padding: 10px;
         text-align: center;
     }
-    
-
-}
-
+}    
 @media screen and (max-width: 768px) {
     .header {
         height: 70px;
     }
     .logo {
         padding-left: 10px;
-        padding-top: 15px;
     }
     .menu {
         display: none;
@@ -1214,8 +1212,7 @@ textarea.form-help-field {
         display: block;
         width: 36px;
         height: 35px;
-        position: relative;
-        margin-top: 26px;
+        margin-top: 21px;
         margin-right: 10px;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
@@ -1227,6 +1224,9 @@ textarea.form-help-field {
         transition: .5s ease-in-out;
         cursor: pointer;
         z-index: 3;
+        position: absolute;
+        top: -65px;
+        right: 0;
     }
     .burger span {
         display: block;
@@ -1257,12 +1257,6 @@ textarea.form-help-field {
     .burger span:nth-child(3) {
         top: 19px;
     }
-
-    .menu_mobile_checkbox:checked ~ .burger {
-        position: fixed;
-        right: 5px;
-    }
-    
     .menu_mobile_checkbox:checked ~ .burger span:nth-child(1) {
         top: 15px;
         -webkit-transform: rotate(135deg);
@@ -1281,40 +1275,19 @@ textarea.form-help-field {
         -o-transform: rotate(-135deg);
         transform: rotate(-135deg);
     }
-    .menu_mobile_checkbox:checked ~ .menu {
-        display: flex;
+    .menu_mobile_checkbox:checked ~ .sidebar {
+        transform: translateX(0);
     }
-
-    .menu {
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: flex-start;
-        padding-top: 128px;
-        position: fixed;
-        width: 100%;
-        height: 100vh;
+    .sidebar {
+        transform: translateX(-450px);
+        z-index: 3;
         top: 0;
-        left: 0;
-        background-color: #fff;
-        z-index: 2;
+        transition: transform .3s ease-in;
+        position: absolute;
     }
-
-    .menu-item span {
-        right: -10px;
+    .sidebar-items--empty {
+        margin-bottom: 0;
     }
-
-    .menu-item {
-        margin-right: 45px;
-        padding: 20px;
-    }
-    .menu-item:last-child {
-        margin-right: 45px;
-        padding-top: 20px;
-    }
-    .menu-link {
-        padding-left: 34px;
-    }
-
     .footer-menu-list {
         flex-direction: column;
         align-items: center;
@@ -1360,11 +1333,6 @@ textarea.form-help-field {
     .modal-error-msg {
         bottom: -20px;
     }
-    .modal-btn-close {
-        right: 50%;
-        transform: translateX(50%);
-    }
-
     /* FORM HELP */
     .form-help {
         padding: 40px 30px;
@@ -1379,36 +1347,13 @@ textarea.form-help-field {
     }
     .content {
         padding: 50px 10px;
+        margin-left: 0;
     }
     .form-row {
         padding-top: 15px;
-        padding-left: 10px;
     }
     .form-label {
         margin-bottom: 10px;
-    }
-    
-    /* SIDEBAR */
-    .sidebar {
-        padding: 50px 10px;
-        max-width: 100%;
-    }
-    .sidebar-items {
-        padding-left: 10px;
-        margin-bottom: 20px;
-    }
-    .sidebar-title {
-        font-size: 24px;
-    }
-    .sidebar-item {
-        margin-bottom: 15px;   
-    }
-    .sidebar-link {
-        font-size: 14px;
-    }
-    .sidebar-items--bottom {
-        padding-top: 20px;
-        padding-bottom: 20px;
     }
 }
 
@@ -1420,9 +1365,6 @@ textarea.form-help-field {
         padding-left: 20px;
     }
 }
-
-
-
 .form-row--error .form-field {
     border: 1px solid red;
     box-shadow: 0 0 2px 0px red;
@@ -1432,7 +1374,6 @@ textarea.form-help-field {
     font-family: 'Airbnb Cereal App Bold';
     letter-spacing: 1px;
     font-size: 12px;
-    padding-left: 15px;
 }
 .form-label--require {
     position: relative;
@@ -1443,7 +1384,6 @@ textarea.form-help-field {
     left: 5px;
     top: 3px;
 } 
-
 .footer-menu-link {
     display: block;
 }
