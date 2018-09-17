@@ -225,7 +225,7 @@ html {
     max-width: 433px;
     width: 100%;
     background-color: #2c2830;
-    padding: 35px 54px 106px 0;
+    padding: 35px 54px 106px 51px;
     position: relative;
 }
 
@@ -245,13 +245,14 @@ html {
     height: 100%;
 }
 .sidebar-items {
-    padding: 20px 25px 20px 71px;
+    padding: 20px 25px 20px 20px;
     border-bottom: 1px solid #58555b;
 }
 .sidebar-image {
     position: relative;
     width: 130px;
     height: 130px;
+    margin-bottom: 9px;
 }
 .sidebar-image img {
     margin: 0 0 4px 7px;
@@ -1109,9 +1110,9 @@ textarea.form-help-field {
 }
 
 @media screen and (max-width: 992px) {
-    .sidebar-items--empty {
+    /* .sidebar-items--empty {
         margin-bottom: 1583px;
-    }
+    } */
     
     .logo {
         padding-left: 10px;
@@ -1300,7 +1301,7 @@ textarea.form-help-field {
         position: relative;
     }
     .sidebar-items {
-        padding: 20px 25px;
+        padding: 20px;
     }
     .sidebar-items--empty {
         margin-bottom: 0;
@@ -1380,9 +1381,6 @@ textarea.form-help-field {
     }
     .sidebar {
         padding: 20px;
-    }
-    .sidebar-items {
-        padding-left: 25px;
     }
     .logo {
         padding-left: 20px;
